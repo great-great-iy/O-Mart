@@ -1,0 +1,56 @@
+*{
+    text-decoration: none;
+}
+button{
+    
+}
+.discount-notice{
+    width: 80vw;
+    height: 3vw;
+    top: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: aliceblue;
+    text-align: center;
+}
+.hd-logo{
+    width: 100vw;
+    height: 10vw;
+    align-items: center;
+}
+.hd-logo .logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(24, 80, 102, 0.8);;
+}
+
+nav{
+    position: sticky;
+    display: flex;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 999;
+}
+
+.nav-menu {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 40vw;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+.login{
+    position: relative;
+    display: flex;
+    margin-right: 1rem;
+}
