@@ -1,0 +1,89 @@
+.pr-col .pr-col-item{
+    width: 100%;
+    height: 424px;
+    position: relative;
+    background: #D1EFEF;
+    border-radius: 60px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pr-col-item .pr-item{
+    position: absolute;
+    width: 218px;
+    height: 52px;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    bottom: 52px;
+    border-radius: 218px/52px;
+    background: #E7FFFF;
+}
+
+.pr-col-item .item-img{
+    position: absolute;
+    z-index: 99;
+    width: 156px;
+    height: 267px;
+    border: none;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 10px);
+}
+
+.item-img img{
+    width: 100%;
+}
+
+.pr-lable {
+    width: 100%;
+    text-align: center;
+}
+
+.pr-txt h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #5E5B59;
+}
+
+.pr-txt p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #5E5B59;
+}
+
+.judge-5stars .fas{
+    font-size: 16px;
+    color: #FFAA3B;
+    padding: 0 2px;
+}
+
+.btn-AddProduct{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    background: #FFAA3B;
+    border-radius: 25px;
+    color: #5E5B59;
+    border: 1px solid #FFAA3B;
+    padding: 7px 34px;
+    font-size: 14px;
+}
+
+
+
+/* .product-quality{
+    width: 1440px;
+    height: 529px;
+    background-image: url('../images/How-to-Train-Your-Dog-to-Play-With-Other-Dogs-1.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} */
+

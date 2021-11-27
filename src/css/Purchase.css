@@ -1,0 +1,91 @@
+.filter{
+    margin-left: 15%;
+    width: 85%;
+    height: 50vw;
+    background: rgba(255, 170, 59, 0.15);
+    border-radius: 45px;
+}
+
+.product-filter label, .price-filter label, .brand-filter label{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #5E5B59;
+    line-height: 22px;
+    margin: 0 10%;
+    padding-top: 20px;
+}
+hr{
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid rgba(255, 170, 59, 0.7);
+}
+
+.btn-product-picker{
+    width: 80%;
+    display: block;
+    background: #D1EFEF;
+    color: #5E5B59;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px;
+    border: #D1EFEF;
+}
+
+.btn-product-picker:hover {
+    background: #FFAA3B;
+}
+
+.min-price-filter{
+    width: 35%;
+    display: inline;
+    margin: 10px 4% 10px 10%;
+    font-size: 12px;
+}
+
+.max-price-filter{
+    width: 35%;
+    display: inline;
+    margin: 10px 10% 10px 4%;
+    font-size: 12px;
+}
+
+.btn-filter{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0px 10%;
+    padding: 5px 8%;
+    border: #FFAA3B;
+    background: #FFAA3B;
+    border-radius: 15px;    
+}
+
+
+.tag-brands {
+    width: 90%;
+    margin: 0px 10%;
+}
+
+.tag-brands label{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5E5B59;
+    margin: 0px 10px;
+    padding: 5px 10px;
+}
+
+.tag-brands input{
+    margin: 0;
+}

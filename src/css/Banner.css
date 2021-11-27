@@ -1,0 +1,95 @@
+.cm-banner{
+    min-height: 100vh;
+    width: 100vw;
+    margin: auto;
+    top: 0px;   
+    background: url('../images/header_background.png') center center/cover no-repeat;
+}
+
+.cm-product-banner{
+    min-height: 573px;
+    width: 100vw;
+    margin: auto;
+    top: 0px;   
+    background: url('../images/bgr_produce_1.jpg') center center/cover no-repeat;
+}
+
+.cm-hd-txt-banner {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+div{
+    display: block;
+}
+.cm-hd-txt-banner .cm-hd-title{
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    font-size: 48px;
+    color: #FFAA3B;
+}
+
+.cm-hd-txt-banner .cm-hd-text{
+    font-weight: 500;
+    padding: 15px 0;
+    font-size: 20px;
+    color: #E7FFFF;
+}
+
+.cm-hd-txt-banner .cm-hd-btn{
+    position: static;
+    background: #FFAA3B;
+    border-radius: 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: #5E5B59;
+    border: 1px solid #FFAA3B;
+    padding: 12px 34px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointe;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .cm-hd-txt-banner {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .cm-hd-txt-banner .cm-hd-title{
+        display: block;
+        font-weight: bold;
+        padding: 0;
+        font-size: 1.4rem;
+        color: #FFAA3B;
+    }
+    
+    .cm-hd-txt-banner .cm-hd-text{
+        font-weight: 500;
+        padding: 15px 0;
+        font-size: 1rem;
+        color: #E7FFFF;
+    }
+    
+    .cm-hd-txt-banner .cm-hd-btn{
+        background: #FFAA3B;
+        border-radius: 25px;
+        display: inline-block;
+        text-decoration: none;
+        color: #5E5B59;
+        border: 1px solid #FFAA3B;
+        padding: 12px 34px;
+        font-size: 1rem;
+        position: relative;
+        cursor: pointe;
+    }
+}

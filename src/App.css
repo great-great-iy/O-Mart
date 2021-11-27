@@ -1,0 +1,28 @@
+* {
+  max-width: 1440px;
+  margin: auto;
+}
+.btn-sort {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  /* line-height: 56px; */
+  color: #5E5B59;
+  background-color: #D1EFEF;
+  border-radius: 25px;
+  padding: 5px 25px;
+}
+
+h2{
+  color: #5E5B59;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 31px;
+}
+.App {
+  text-align: center;
+}
+
