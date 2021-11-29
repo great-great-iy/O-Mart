@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Cart from './../conponents/Cart';
 import CartItem from './../conponents/CartItem';
 import CartResult from '../conponents/CartResult';
+
 import * as actions from './../actions/index';
 import * as Messega from './../constants/Message';
 
@@ -78,9 +79,6 @@ const mapDispatchToProps = (dispatch, props) =>{
     return {
         // onRemoveProductInCart : (product) =>{
         //     dispatch(actions.actRemoveProductInCart(product));
-        // },
-        // onChangeMessage : (message) =>{
-        //     dispatch(actions.actChangeMessage(message));
         // },
         // onUpdateProductInCart : (product, quantity) =>{
         //     dispatch(actions.actUpdateProductInCart(product, quantity));

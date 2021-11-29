@@ -13,7 +13,7 @@ class Product extends Component {
         
                             </div>
                             <div class="item-img">
-                                <a href='#'><img src={product.image} alt={product.name}/></a>
+                                <a href='/productDetail'><img src={product.image} alt={product.name}/></a>
                             </div>
                         </div>
                         <div className="pr-lable">

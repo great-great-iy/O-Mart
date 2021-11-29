@@ -14,6 +14,14 @@
     background: url('../images/bgr_produce_1.jpg') center center/cover no-repeat;
 }
 
+.cm-product-detail-banner{
+    min-height: 573px;
+    width: 100vw;
+    margin: auto;
+    top: 0px;   
+    background: url('../images/bgr_produce_solidgold_1.jpg') center center/cover no-repeat;
+}
+
 .cm-hd-txt-banner {
     width: 90%;
     position: absolute;

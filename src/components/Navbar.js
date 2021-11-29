@@ -36,7 +36,7 @@ class Navbar extends Component{
                             <li className="cm-nav-item cm-nav-item-menu">
                                 <div className='buy-sell'>
                                     <Link 
-                                        to='/purchase' 
+                                        to='/' 
                                         className='cm-nav-link'
                                     >MUA SẮM <i className='fas fa-chevron-down'></i></Link>
                                     <div className='menu-buy-sell'>
