@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './../css/Navbar.css';
-import ShowCartItem from './ShowCartItem';
+import ShowCart from './ShowCart';
 
 class Navbar extends Component{
 
@@ -70,9 +70,8 @@ class Navbar extends Component{
                                             </Link>
                                         </div>
                                         <div className='show-cart'>
-                                            
                                             {/* product in cart*/}
-                                            <ShowCartItem/>
+                                            <ShowCart/>
                                       
                                         </div>
                                     </div>

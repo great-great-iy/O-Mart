@@ -4,7 +4,7 @@ import Product from '../components/Product';
 import Products from '../components/Products';
 import PropTypes from 'prop-types';
 
-// import * as actions from './../actions/index' ;
+import * as actions from './../actions/index' ;
 // import products from '../reducers/products';
 
 class ProductsContainer extends Component {
@@ -21,13 +21,13 @@ class ProductsContainer extends Component {
 
     showProduct = (products) =>{
         var result = null;
-        // var { onAddToCart, onChangeMessage } = this.props;
+        var { onAddToCart } = this.props;
         if(products.length > 0){
             result = products.map((product, index) => {
                 return <Product 
                             key = {index}
                             product = {product}
-                            // onAddToCart = {onAddToCart}    
+                            onAddToCart = {onAddToCart}    
                             // onChangeMessage = {onChangeMessage}
                         />
             })
@@ -58,9 +58,9 @@ const mapStateToProps = (state) =>{
 
 const mapDispatchToProps = (dispatch, props) =>{
     return {
-        // onAddToCart : (product) => {
-        //     dispatch(actions.actAddToCart(product, 1))
-        // },
+        onAddToCart : (product) => {
+            dispatch(actions.actAddToCart(product, 1))
+        }
         // onChangeMessage : (message) =>{
         //     dispatch(actions.actChangeMessage(message))
         // }

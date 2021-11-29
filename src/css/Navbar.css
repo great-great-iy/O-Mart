@@ -194,6 +194,9 @@ nav .fas:hover{
     width: 90%;
 }
 
+.cart:hover .show-cart{
+    display: block;
+}
 .cart-item {
     margin-left: 5%;
 }

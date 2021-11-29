@@ -9,7 +9,7 @@ var intialState = [
         image : './../images/product-1.png',
         price : 199000,
         inventory : 10,
-        rating : 4
+        rating : 3
     },
     {
         id : randomID.generate(),
@@ -65,7 +65,7 @@ var intialState = [
         image : './../images/product-8.png',
         price : 240000,
         inventory : 10,
-        rating : 5
+        rating : 2
     },
     {
         id : randomID.generate(),
@@ -79,6 +79,7 @@ var intialState = [
 
 const products = (state = intialState, action) => {
     switch(action.Types){
+        
         default: return [...state]
     }
 }
