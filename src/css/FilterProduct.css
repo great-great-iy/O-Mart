@@ -16,7 +16,7 @@
     margin: 0 10%;
     padding-top: 20px;
 }
-hr{
+.filter hr{
     width: 80%;
     margin: 10px auto;
     border: 1px solid rgba(255, 170, 59, 0.7);

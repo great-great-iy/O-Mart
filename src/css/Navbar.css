@@ -163,6 +163,41 @@ nav .fas:hover{
 .menu-bs-cat:hover .menu-bs-link, .menu-bs-dog:hover .menu-bs-link, .menu-bs-fish:hover .menu-bs-link{
     color: #7DF3F5;
 }
+
+.show-cart{
+    position: absolute;
+    margin-top: 10px;
+    right: -50px;
+    z-index: 1;
+    display: none;
+    width: 304px;
+    height: 304px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* xanh nền */
+
+    background: #E7FFFF;
+    border-radius: 30px;
+}
+
+.show-cart h3{
+    margin: 5px 0 0 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 37px;
+    /* Màu chữ */
+
+    color: #5E5B59;
+}
+
+.show-cart hr{
+    width: 90%;
+}
+
+.cart-item {
+    margin-left: 5%;
+}
+
 @media only screen and (max-width: 980px){
     nav .fa{
         color: #000;

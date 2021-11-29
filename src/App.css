@@ -26,3 +26,18 @@ h2{
   text-align: center;
 }
 
+hr{
+  color: #FFAA3B;
+  border: 1px solid #FFAA3B;
+  margin: auto;
+}
+
+.width-90{
+  width: 90%;
+  margin: auto;
+  padding: 5px 0;
+}
+
+.display-inline{
+  display: inline-block;
+}

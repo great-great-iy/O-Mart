@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './../css/Navbar.css';
+import ShowCartItem from './ShowCartItem';
 
 class Navbar extends Component{
 
@@ -61,8 +62,21 @@ class Navbar extends Component{
                             <ul className="cm-nav-list">
                                 <li className="cm-nav-item cm-nav-item-menu">                                 
                                     <Link to='/' className="cm-nav-link"><span className="icon"><i class="fas fa-search"></i></span></Link></li>
-                                <li className="cm-nav-item cm-nav-item-menu">
-                                    <Link to='/' className="cm-nav-link"><span className="icon"><i class="fas fa-cart-arrow-down"></i></span></Link></li>
+                                <li className="cm-nav-item cm-nav-item-menu">    
+                                    <div className='cart'>
+                                        <div>
+                                            <Link to='/' className="cm-nav-link">
+                                                <span className="icon"><i class="fas fa-cart-arrow-down"></i></span>
+                                            </Link>
+                                        </div>
+                                        <div className='show-cart'>
+                                            
+                                            {/* product in cart*/}
+                                            <ShowCartItem/>
+                                      
+                                        </div>
+                                    </div>
+                                </li>
                                 <li className="cm-nav-item cm-nav-item-menu">
                                     <Link to='/' className="cm-nav-link"><span className="icon"><i class="fas fa-user"></i></span></Link></li>
                             </ul>
@@ -72,6 +86,7 @@ class Navbar extends Component{
             </>
         )
     }
+
 }
 
 export default Navbar;

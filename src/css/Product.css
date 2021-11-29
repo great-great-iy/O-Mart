@@ -58,7 +58,7 @@
     color: #5E5B59;
 }
 
-.judge-5stars .fas{
+.judge-5stars .fas, .judge-5stars .far{
     font-size: 16px;
     color: #FFAA3B;
     padding: 0 2px;
