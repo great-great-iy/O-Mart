@@ -1,14 +1,23 @@
 import React from 'react';
 import { Component } from 'react';
 import './../css/Product.css';
-import Product from './Product';
+// import Product from './Product';
 
 class ProductDetail extends Component{
+
+
+    constructor(props){
+        super(props);
+        this.state = {
+            click : false,
+            value : ''
+        }
+    }
     render(){
-        var { product } = this.props;
+        // var { product } = this.props;
         return(
             <section>
-                
+                {/* Thông tin sản phẩm */}
                 <div className="row mt-5 width-90">
                     
                     <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -131,45 +140,96 @@ class ProductDetail extends Component{
                     </div>
                     
                 </div>
-
-                
+                {/* Thông tin chi tiết sản phẩm */}
                 <div class="mt-5 width-80">
                     <div>
                         <div className='text-description-product'>
-                            <dic className='text'>
+                            <div className='text'>
                                 Thành Phẩm Dinh Dưỡng
-                            </dic>
-                            <div className='icon'>
-                                <i class="fas fa-chevron-down "></i>
+                            </div>
+                                                        
+                            <div 
+                                type="button"
+                                className='icon'
+                                onClick = {() => this.onShow(this.state.click, '-1')}
+                            >
+                                <i class="fas fa-chevron-down"></i>
                             </div>
                             
                         </div>
-                        <div></div>
+                        <div className={(this.state.click === true && this.state.value ==='-1') ? 'show-description-product onshow' : 'show-description-product'}>
+                            {console.log(this.state.click)}
+                            <div className='show-text width-90'>
+                                Hạt Let’s Stay In là một sản phẩm hạt khô cho mèo cung cấp dinh dưỡng hoàn chỉnh cùng chế độ ăn uống cân bằng. Đặc biệt là không chứa phẩm màu, hương vị hoặc chất bảo quản nhân tạo.
+                            </div>
+                            
+                            <div className='ingredient-product width-90'>
+                                
+                                <div className='show-ingredient'>
+                                    <h4>425</h4>
+                                    <p>Calories</p>
+                                </div>
+                                <div className='show-ingredient'>
+                                    <h4>36%</h4>
+                                    <p>Protein</p>
+                                </div>
+                                <div className='show-ingredient'>
+                                    <h4>16%</h4>
+                                    <p>Fat</p>
+                                </div>
+                                <div className='show-ingredient'>
+                                    <h4>8%</h4>
+                                    <p>Fiber</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <div className='show-text width-90'>
+                                Thức ăn dạng hạt mềm khô, giữ được hương vị thơm ngon của thịt gà. Tất cả nguyên liệu đều phải trải qua quy trình chọn lọc nghiêm ngặt để đảm bảo các bạn thú cưng không chỉ ăn no mà còn ngon và khỏe.
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <div className='text-description-product'>
                             <dic className='text'>
                                 Lợi Ích Chính
                             </dic>
-                            <div className='icon'>
-                                <i class="fas fa-chevron-down "></i>
+                            <div 
+                                type="button"
+                                className='icon'
+                                onClick = {() => this.onShow(this.state.click, '0')}
+                            >
+                                <i class="fas fa-chevron-down"></i>
                             </div>
                         </div>
-                        <div></div>
+                        <div className={(this.state.click === true && this.state.value ==='0') ? 'show-description-product onshow' : 'show-description-product'}>
+                            <div className='show-text width-90'>
+                                Không cần tìm kiếm thêm nữa, đây là loại thức ăn được thiết kế đặc biệt để đáp ứng nhu cầu của mèo trong nhà của bạn. Tất cả gà tự nhiên kết hợp với đậu lăng đóng gói chất xơ và hỗn hợp siêu thực phẩm chức năng độc đáo
+                            </div>
+                            <div className='show-text width-90'>
+                                Thực phẩm giúp mèo của bạn cảm thấy hài lòng và có thể giúp kiểm soát lông rụng. Công thức ngũ cốc và không chứa gluten này cũng có men vi sinh sống và omegas phong phú để cung cấp sức khỏe đường ruột và hỗ trợ miễn dịch tổng thể
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <div className='text-description-product'>
                             <dic className='text'>
                                 Hướng Dẫn Cho Ăn
                             </dic>
-                            <div className='icon'>
-                                <i class="fas fa-chevron-down "></i>
+                            <div 
+                                type="button"
+                                className='icon'
+                                onClick = {() => this.onShow(this.state.click, '1')}
+                            >
+                                <i class="fas fa-chevron-down"></i>
                             </div>
                         </div>
-                        <div></div>
+                        <div className={(this.state.click === true && this.state.value ==='1') ? 'show-description-product onshow' : 'show-description-product'}>
+
+                        </div>
                     </div>
                 </div>
-
+                {/* Đánh giá sản phẩm */}
                 <div className='raiting mt-5 width-80'>
                     <div className='raiting-lable mb-3'>
                         <h5>Đánh Giá (0)</h5>
@@ -191,7 +251,8 @@ class ProductDetail extends Component{
                     </div>
                     
                 </div>
-                
+
+                {/* Các sản phẩm tương tự */}
                 <div className='same-product'>
                     <h3>Sản phẩm tương tự</h3>
                     
@@ -217,7 +278,7 @@ class ProductDetail extends Component{
                                     
                                     <button 
                                         type="button" 
-                                        class="btn btn-info mt-3 btn-AddProduct" 
+                                        class="btn btn-info mt-3 btn-add-product" 
                                         // onClick = {() => this.onAddToCart(product)} 
                                     ><i class="fas fa-cart-plus mr-3"></i>THÊM VÀO GIỎ HÀNG</button>
                                 </div>
@@ -245,7 +306,7 @@ class ProductDetail extends Component{
                                     
                                     <button 
                                         type="button" 
-                                        class="btn btn-info mt-3 btn-AddProduct" 
+                                        class="btn btn-info mt-3 btn-add-product" 
                                         // onClick = {() => this.onAddToCart(product)} 
                                     ><i class="fas fa-cart-plus mr-3"></i>THÊM VÀO GIỎ HÀNG</button>
                                 </div>
@@ -273,7 +334,7 @@ class ProductDetail extends Component{
                                     
                                     <button 
                                         type="button" 
-                                        class="btn btn-info mt-3 btn-AddProduct" 
+                                        class="btn btn-info mt-3 btn-add-product" 
                                         // onClick = {() => this.onAddToCart(product)} 
                                     ><i class="fas fa-cart-plus mr-3"></i>THÊM VÀO GIỎ HÀNG</button>
                                 </div>
@@ -301,7 +362,7 @@ class ProductDetail extends Component{
                                     
                                     <button 
                                         type="button" 
-                                        class="btn btn-info mt-3 btn-AddProduct" 
+                                        class="btn btn-info mt-3 btn-add-product" 
                                         // onClick = {() => this.onAddToCart(product)} 
                                     ><i class="fas fa-cart-plus mr-3"></i>THÊM VÀO GIỎ HÀNG</button>
                                 </div>
@@ -318,6 +379,12 @@ class ProductDetail extends Component{
                 </div>                
             </section>
         );
+    }
+    onShow = (click, value) =>{
+        this.setState({ 
+            click : !click,
+            value : value
+        });
     }
 }
 

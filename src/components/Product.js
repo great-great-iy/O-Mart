@@ -27,7 +27,7 @@ class Product extends Component {
                             
                             <button 
                                 type="button" 
-                                class="btn btn-info mt-3 btn-AddProduct" 
+                                class="btn btn-info mt-3 btn-add-product" 
                                 onClick = {() => this.onAddToCart(product)} 
                             ><i class="fas fa-cart-plus mr-3"></i>THÊM VÀO GIỎ HÀNG</button>
                         </div>
