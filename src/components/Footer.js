@@ -35,7 +35,7 @@ function Footer() {
                             <Link to='/'>Thông tin tuyển dụng</Link><br/>
                         </div>
                     </div>
-                    <div class="our-cont">
+                    {/* <div class="our-cont">
                         <div class="line"></div>
                         <div class="footer">
                             <div class="our-name">
@@ -49,7 +49,7 @@ function Footer() {
                                 <i class="fa fa-youtube-play"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </footer>
         </>

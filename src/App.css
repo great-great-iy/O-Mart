@@ -26,6 +26,10 @@ h2{
   text-align: center;
 }
 
+.color-text{
+  color: #FFAA3B;
+}
+
 hr{
   color: #FFAA3B;
   border: 1px solid #FFAA3B;
@@ -38,6 +42,14 @@ hr{
   padding: 5px 0;
 }
 
+.width-80{
+  width: 80%;
+  margin: auto;
+  padding: 5px 0;
+}
 .display-inline{
   display: inline-block;
+}
+.opacity-icon{
+  opacity: 0.7;
 }

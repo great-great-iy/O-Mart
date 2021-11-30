@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import Banner from '../Banner';
 import ProductDetail from '../ProductDetail';
+import Footer from '../Footer';
 
 
 class Test extends Component{
@@ -10,7 +11,7 @@ class Test extends Component{
             <>
                 <Banner banner = 'cm-product-detail-banner'/>
                 <ProductDetail/>
-                
+                <Footer/>
             </>
         );
     }
