@@ -65,7 +65,7 @@ class Navbar extends Component{
                                 <li className="cm-nav-item cm-nav-item-menu">    
                                     <div className='cart'>
                                         <div>
-                                            <Link to='/' className="cm-nav-link">
+                                            <Link to='/payment' className="cm-nav-link">
                                                 <span className="icon"><i class="fas fa-cart-arrow-down"></i></span>
                                             </Link>
                                         </div>

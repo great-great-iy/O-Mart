@@ -3,7 +3,7 @@ import { Component } from 'react';
 import './../css/Product.css';
 // import Product from './Product';
 
-class ProductDetail extends Component{
+class ShowProductDetail extends Component{
 
 
     constructor(props){
@@ -160,6 +160,7 @@ class ProductDetail extends Component{
                         <div className={(this.state.click === true && this.state.value ==='-1') ? 'show-description-product onshow' : 'show-description-product'}>
                             {console.log(this.state.click)}
                             <div className='show-text width-90'>
+                                <i class="fas fa-paw mr-3"></i>
                                 Hạt Let’s Stay In là một sản phẩm hạt khô cho mèo cung cấp dinh dưỡng hoàn chỉnh cùng chế độ ăn uống cân bằng. Đặc biệt là không chứa phẩm màu, hương vị hoặc chất bảo quản nhân tạo.
                             </div>
                             
@@ -185,6 +186,7 @@ class ProductDetail extends Component{
                                 
                             </div>
                             <div className='show-text width-90'>
+                                <i class="fas fa-paw mr-3"></i>
                                 Thức ăn dạng hạt mềm khô, giữ được hương vị thơm ngon của thịt gà. Tất cả nguyên liệu đều phải trải qua quy trình chọn lọc nghiêm ngặt để đảm bảo các bạn thú cưng không chỉ ăn no mà còn ngon và khỏe.
                             </div>
                         </div>
@@ -204,10 +206,15 @@ class ProductDetail extends Component{
                         </div>
                         <div className={(this.state.click === true && this.state.value ==='0') ? 'show-description-product onshow' : 'show-description-product'}>
                             <div className='show-text width-90'>
+                                <i class="fas fa-paw mr-3"></i>
                                 Không cần tìm kiếm thêm nữa, đây là loại thức ăn được thiết kế đặc biệt để đáp ứng nhu cầu của mèo trong nhà của bạn. Tất cả gà tự nhiên kết hợp với đậu lăng đóng gói chất xơ và hỗn hợp siêu thực phẩm chức năng độc đáo
                             </div>
                             <div className='show-text width-90'>
+                                <i class="fas fa-paw mr-3"></i>
                                 Thực phẩm giúp mèo của bạn cảm thấy hài lòng và có thể giúp kiểm soát lông rụng. Công thức ngũ cốc và không chứa gluten này cũng có men vi sinh sống và omegas phong phú để cung cấp sức khỏe đường ruột và hỗ trợ miễn dịch tổng thể
+                            </div>
+                            <div className='imgage-benefit'>
+                                <img src='./images/benefit.png'/>
                             </div>
                         </div>
                     </div>
@@ -388,4 +395,4 @@ class ProductDetail extends Component{
     }
 }
 
-export default ProductDetail;
+export default ShowProductDetail;

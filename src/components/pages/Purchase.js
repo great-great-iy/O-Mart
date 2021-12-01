@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProductsContainer from './../../containers/ProductsContainer';
 import Banner from '../Banner';
 import FilterProduct from '../FilterProduct';
+import Footer from '../Footer';
 
 
 class Purchase extends Component{
@@ -43,6 +44,8 @@ class Purchase extends Component{
                     </div>
                         
                 </div>
+
+                <Footer/>
             </>
             
         );

@@ -24,7 +24,7 @@
     position: absolute;
     z-index: 99;
     width: 156px;
-    height: 267px;
+    height: 220px;
     border: none;
     top: 70px;
     left: 50%;
@@ -284,6 +284,17 @@
     font-style: normal;
     font-size: 22px;
     line-height: 50%;
+}
+
+.imgage-benefit{
+    width: 536px;
+    height: 280px;
+    border-radius: 30px;
+    margin: 15px auto;
+}
+
+.imgage-benefit img{
+    width: 100%;
 }
 
 

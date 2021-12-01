@@ -1,20 +1,20 @@
 import React from 'react';
 import { Component } from 'react';
 import Banner from '../Banner';
-import ProductDetail from '../ProductDetail';
+import ShowProductDetail from '../ShowProductDetail';
 import Footer from '../Footer';
 
 
-class Test extends Component{
+class ProductDetail extends Component{
     render(){
         return(
             <>
                 <Banner banner = 'cm-product-detail-banner'/>
-                <ProductDetail/>
+                <ShowProductDetail/>
                 <Footer/>
             </>
         );
     }
 }
 
-export default Test;
+export default ProductDetail;

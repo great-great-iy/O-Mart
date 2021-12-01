@@ -69,3 +69,11 @@ hr{
 .onshow{
   display: block;
 }
+
+.bg-orange{
+    background: rgba(255, 170, 59, 0.15);
+}
+
+.display-flex{
+  display: flex;
+}
