@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Cart extends Component{
     render(){
         return(
-            <div class="row mt-5 width-90">
+            <div class="row mt-5 width-90 payment">
                     
                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                     <h3>Điền thông tin nhận hàng</h3>
@@ -11,21 +12,28 @@ class Cart extends Component{
                     <form>
                     
                         <div class="form-group">
-                            <input type="text" class="form-control" id="" placeholder="Họ và tên ..."/>
-                            <input type="text" class="form-control" id="" placeholder="Số điện thoại ..."/>
-                            <input type="text" class="form-control" id="" placeholder="Địa chỉ nhà cụ thể ..."/>
+                            <input type="text" class="form-control input-infor" id="" placeholder="Họ và tên ..."/>
+                            <input 
+                                type="tel" 
+                                class="form-control input-infor" 
+                                id=""
+                                // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="Số điện thoại ..."/>
+                            <input type="text" class="form-control input-infor" id="" placeholder="Địa chỉ nhà cụ thể ..."/>
                             <div className="d-flex">
-                                <div className='pick-city-district'>
+                                <div className='pick-area'>
                                     <select
-                                        value='Chọn thành phố'
+                                        className='pick-city-district mr-4'
+                                        value=''
                                     >
-                                        <option>Hà Nội</option>
-                                        <option>Đà Nẵng</option>
-                                        <option>Hồ Chí Minh</option>
+                                        <option value='Hanoi'>Hà Nội</option>
+                                        <option value='Danang'>Đà Nẵng</option>
+                                        <option value='Hcm'>Hồ Chí Minh</option>
                                     </select>
                                 </div>
-                                <div className='pick-city-district'>
+                                <div className='pick-area'>
                                     <select
+                                        className='pick-city-district ml-4'
                                         value='Chọn quận huyện'
                                     >
                                         <option>Quốc Oai</option>
@@ -34,7 +42,9 @@ class Cart extends Component{
                                     </select>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" id="" placeholder="Ghi chú cho cửa hàng ..."/>
+                            
+                            <textarea name="" id="input" class="form-control input-infor pt-3 pl-3 bor" rows="4" placeholder="Ghi chú cho cửa hàng ..."></textarea>
+                            
                         </div>
                     </form>
 
@@ -94,22 +104,27 @@ class Cart extends Component{
                             </div>
                         </div>
                         <hr/>
-                        <label>
-                            Mã giảm giá
-                            <input 
-                                type="text" 
-                                name=''
-                                placeholder='Nhập mã tại đây'
-                            />
-                        </label>
-                        <hr/>
-                        <p>Giá trị sản phẩm <span>199.000đ</span></p>
-                        <p>Tiền ship <span>30.000đ</span></p>
-                        <p>Giảm giá <span>0đ</span></p>
-                        <hr/>
-                        <h3>Tính Tổng Tiền <span>229.000đ</span></h3>
+                        <div>
+                            <label className='pt-2 font-text'>
+                                <span>Mã giảm giá</span>
+                                <input 
+                                    className='input-voucher ml-5'
+                                    type="text" 
+                                    name=''
+                                    placeholder='Nhập mã tại đây'
+                                />
+                            </label>
+                            <hr/>
+                            <div className='pt-3'>
+                                <p className='font-text'>Giá trị sản phẩm <span>199.000đ</span></p>
+                                <p className='font-text'>Tiền ship <span>30.000đ</span></p>
+                                <p className='font-text'>Giảm giá <span>0đ</span></p>
+                            </div>
+                            <hr/>
+                            <p className='pt-3 font-text'>Tính Tổng Tiền <span>229.000đ</span></p>
+                        </div>             
                         
-                        <button type="submit" class="btn btn-primary">ĐẶT HÀNG<i class="fas fa-arrow-right"></i></button>
+                        <button type="submit" class="btn btn-primary"><Link to='/ordersuccess'>ĐẶT HÀNG<i class="fas fa-arrow-right"></i></Link></button>
                     </form>
                 </div>
             

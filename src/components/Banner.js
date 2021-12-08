@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './../css/Banner.css';
+import Search from './Search';
 
 function Banner(props) {
 
     return (
         <>
             <div className={props.banner}>
-                <div className="cm-hd-txt-banner">
+                <div className="banner-content">    
+                    <Search/>
                 </div>
             </div>
               

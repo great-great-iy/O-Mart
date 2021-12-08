@@ -1,7 +1,7 @@
 .pr-col .pr-col-item{
+    position: relative;
     width: 100%;
     height: 424px;
-    position: relative;
     background: #D1EFEF;
     border-radius: 60px;
     margin-bottom: 5%;
@@ -10,25 +10,20 @@
 }
 
 .pr-col-item .pr-item{
-    position: absolute;
+    position: relative;
     width: 218px;
     height: 52px;
-    left: 50%;
-    transform: translate(-50%, 10px);
-    bottom: 52px;
     border-radius: 218px/52px;
     background: #E7FFFF;
 }
 
 .pr-col-item .item-img{
-    position: absolute;
+    position: relative;
     z-index: 99;
     width: 156px;
     height: 220px;
     border: none;
     top: 70px;
-    left: 50%;
-    transform: translate(-50%, 10px);
 }
 
 .item-img img{

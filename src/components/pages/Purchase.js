@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ProductsContainer from './../../containers/ProductsContainer';
 import Banner from '../Banner';
 import FilterProduct from '../FilterProduct';
-import Footer from '../Footer';
 
 
 class Purchase extends Component{
@@ -11,32 +10,67 @@ class Purchase extends Component{
             <>
                 <Banner banner = 'cm-product-banner'/>
                 <div className="container mt-5">
-                    
                     <div class="row m-5">
-                        
                         <div>                          
                             <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                                 <h2>Thức Ăn Hạt Cho Mèo</h2>
                             </div>
-                            
                             <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                                
-                                <button type="button" class="btn btn-xs btn-primary btn-sort">Sắp xếp theo <i class="fas fa-chevron-down ml-2"></i></button>
-                                
+                                <div className="dropdown">                                    
+                                    <button 
+                                        className="btn btn-primary dropdown-toggle btn-sort" 
+                                        type="button" 
+                                        id="dropdownSortMenu" 
+                                        data-toggle="dropdown" 
+                                        aria-haspopup="true" 
+                                        aria-expanded="true">
+                                        Sắp xếp theo 
+                                    </button>
+                                    <ul className="dropdown-menu" aria-labelledby="dropdownSortMenu">
+                                        <li 
+                                            // onClick = { () => this.onClick('name', '1')}
+                                        >
+                                            <a role="button">
+                                                <span>
+                                                    Giá: Thấp đến Cao
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li 
+                                            // onClick = { () => this.onClick('name', '-1')}
+                                        >
+                                            <a role="button">
+                                                <span>
+                                                    Giá: Cao đến Thấp
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li role="separator" className="divider"></li>
+                                        <li 
+                                            // onClick = { () => this.onClick('status', '1')}
+                                        >
+                                            <a role="button">
+                                                Bán Chạy
+                                            </a>
+                                        </li>
+                                        <li 
+                                            // onClick = { () => this.onClick('status', '-1')}
+                                        >
+                                            <a role="button">
+                                                Mới nhất
+                                            </a>
+                                        </li>
+                                    </ul>
+                            
+                                </div>
                             </div>                                          
-                        </div>
-                        
+                        </div>  
                         <div className='display-inline'>
                             <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                                
                                 <ProductsContainer/>
-                 
-                            </div>
-                            
-                            
+                            </div>                            
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                <FilterProduct/>
-                                
+                                <FilterProduct/>         
                             </div>
                         </div>
                         
@@ -44,8 +78,6 @@ class Purchase extends Component{
                     </div>
                         
                 </div>
-
-                <Footer/>
             </>
             
         );

@@ -5,3 +5,57 @@
 .display-flex{
     display: flex;
 }
+
+.input-infor{
+    width: 526px;
+    height: 36px; 
+    border: none;
+    margin: 10px 0;
+    border-radius: 20px;
+    background: #D4EFEF;
+}
+
+.pick-city-district{
+    width: 248px;
+    height: 36px; 
+    border: none;
+    padding: 0 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    background: #D4EFEF;
+    color: #5E5B59;
+}
+textarea{
+    resize: none;
+}
+.payment label{
+    width: 100%;
+}
+label span{
+    
+}
+.payment label input[type='text']{
+    right: 8px;
+    border: none;
+    width: 267px;
+    height: 36px;
+    padding: 0 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    background: #D4EFEF;
+}
+.input-voucher{
+    float: right;    
+}
+
+.payment p span{
+    position: absolute;
+    right: 8px;
+
+}	
+/* input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"]:checked + label {
+ 
+} */

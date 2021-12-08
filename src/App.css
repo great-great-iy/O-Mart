@@ -1,73 +1,73 @@
 * {
-  max-width: 1440px;
-  margin: auto;
+    max-width: 1440px;
+    margin: auto;
 }
 .btn-sort {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  /* line-height: 56px; */
-  color: #5E5B59;
-  background-color: #D1EFEF;
-  border-radius: 25px;
-  padding: 5px 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #5E5B59;
+    background-color: #D1EFEF;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 25px;
 }
 
 h2{
-  color: #5E5B59;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 31px;
+    color: #5E5B59;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 31px;
 }
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .color-text{
-  color: #FFAA3B;
+    color: #FFAA3B;
 }
 
 hr{
-  color: #FFAA3B;
-  border: 1px solid #FFAA3B;
-  margin: auto;
+    color: #FFAA3B;
+    border: 1px solid #FFAA3B;
+    margin: auto;
 }
 
 .width-90{
-  width: 90%;
-  margin: auto;
-  padding: 5px 0;
+    width: 90%;
+    margin: auto;
+    padding: 5px 0;
 }
 
 .width-80{
-  width: 80%;
-  margin: auto;
-  padding: 5px 0;
+    width: 80%;
+    margin: auto;
+    padding: 5px 0;
 }
 .display-inline{
-  display: inline-block;
+    display: inline-block;
 }
 .opacity-icon{
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .show-text{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  /* or 24px */
-  text-align: justify;
-  /* Màu chữ */
-  color: #5E5B59;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: justify;
+    /* Màu chữ */
+    color: #5E5B59;
 }
 
 .onshow{
-  display: block;
+    display: block;
 }
 
 .bg-orange{
@@ -75,5 +75,18 @@ hr{
 }
 
 .display-flex{
-  display: flex;
+    display: flex;
+}
+
+.none-type{
+    list-style: none;
+    text-decoration: none;
+}
+
+.font-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #5E5B59;
 }

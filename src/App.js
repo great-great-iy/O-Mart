@@ -6,6 +6,7 @@ import Purchase from './components/pages/Purchase';
 import ProductDetail from './components/pages/ProductDetail';
 import Footer from './components/Footer';
 import Payment from './components/pages/Payment';
+import PaymentSuccess from './components/pages/PaymentSuccess';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' exact component={Purchase} />
         <Route path='/productDetail' exact component={ProductDetail} />
         <Route path='/payment' exact component={Payment}/>
+        <Route path='/ordersuccess' exact component={PaymentSuccess}/>
       </Switch>
       <Footer/>
     </Router>

@@ -30,45 +30,15 @@
     background: url('../images/bgr_cart.jpg') center center/cover no-repeat;
 }
 
-.cm-hd-txt-banner {
+.banner-content {
     width: 90%;
-    position: absolute;
-    top: 50%;
+    position: absolute; 
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
 }
-div{
-    display: block;
-}
-.cm-hd-txt-banner .cm-hd-title{
-    display: block;
-    font-weight: bold;
-    padding: 0;
-    font-size: 48px;
-    color: #FFAA3B;
-}
 
-.cm-hd-txt-banner .cm-hd-text{
-    font-weight: 500;
-    padding: 15px 0;
-    font-size: 20px;
-    color: #E7FFFF;
-}
-
-.cm-hd-txt-banner .cm-hd-btn{
-    position: static;
-    background: #FFAA3B;
-    border-radius: 25px;
-    display: inline-block;
-    text-decoration: none;
-    color: #5E5B59;
-    border: 1px solid #FFAA3B;
-    padding: 12px 34px;
-    font-size: 14px;
-    position: relative;
-    cursor: pointe;
-}
 
 @media screen and (max-width: 960px) {
     

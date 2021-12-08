@@ -11,7 +11,6 @@ class ProductDetail extends Component{
             <>
                 <Banner banner = 'cm-product-detail-banner'/>
                 <ShowProductDetail/>
-                <Footer/>
             </>
         );
     }
