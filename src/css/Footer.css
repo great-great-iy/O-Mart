@@ -2,67 +2,37 @@
 .footer{
     width: 100vw;
     margin: auto;
-    text-align: center;
     position: relative;
-}
-
-.ft-bgr-1{
-    position: absolute;
-    width: 100%;
-    height: 340px;
-    bottom: 0px;
-}
-
-.ft-bgr-1 img{
-    width: 100%;
-}
-
-.ft-img-1{
-    z-index: 1;
-    position: absolute;
-    width: 192px;
-    height: 340px;
-    bottom: 0px;
-}
-
-.ft-img-2{
-    z-index: 1;
-    position: absolute;
-    width: 192px;
-    height: 340px;
-    bottom: 0px;
-    right: 0px;
-}
-
-/* ----------------Our Contact----------- */
-.contact-infor{
-    width: 100vw;
-    height: 340px;
-    margin: auto;
+    min-height: 304px;
     background: #5E5B59;
 }
 
-.contact-infor .cont-row{
-    z-index: 2;
-    position: relative;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    padding-top: 20px;
-    justify-content: space-between;
+.ft-bgr img{
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 
-.contact-infor .cont-col{
-    z-index: 2;
-    position: relative;
-    flex-basis: 20%;
-    text-align: justify;
-    box-sizing: border-box;
-    margin-top: 0px;
+.contact-infor{
+    width: 80%;
+    margin: auto;
+    z-index: 99;
+}
+/* ----------------Our Contact----------- */
+
+.ft-logo img{
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.footer hr{
+    width: 80%;
+    margin: 50px auto 0 auto;
 }
 
 .cont-col h5{
-    position: relative;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -72,61 +42,44 @@
 }
 
 .cont-col a{
-    position: relative;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 30px;
-    border: none;
     padding: 32px 0px;
     text-decoration: none;
     color: #E7FFFF;
 }
 
-.contact-infor .cont-col img{
-    width: 100%;
-    border: none;
-    padding-top: 80px;
-}
 
 /* ---------------follow------------ */
-.our-cont{
+.name-company p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #E7FFFF;
+}
+.follow {
     position: relative;
-    width: 80%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    outline: none;
-    padding-top: 60px;
-}
-
-.line{
-    width: 100%;
-    border: 1px solid #F39A26;
-}
-
-.our-name{
-    position: absolute;
-    left: 0px;
-    color: #E7FFFF;
-}
-
-.follow{
-    position: absolute;
-    display: flex;
+    float: right;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
     right: 0px;
-    display: block;
-}
-
-.follow span{
     color: #E7FFFF;
 }
+.follow ul{
+    display: inline-block;
+    list-style: none;
+    padding-inline-start: 5px;
+}
 
-.follow .fa{
-    box-sizing: border-box;
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    color: #5E5B59;
-    background: #FFAA3B;
-    align-items: center;
+.follow ul li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.follow .fab{
+    font-size: 18px;
+    color: #FFAA3B;
 }

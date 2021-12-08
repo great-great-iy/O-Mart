@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProductsContainer from './../../containers/ProductsContainer';
 import Banner from '../Banner';
 import FilterProduct from '../FilterProduct';
+import SortProduct from '../SortProduct';
 
 
 class Purchase extends Component{
@@ -16,53 +17,7 @@ class Purchase extends Component{
                                 <h2>Thức Ăn Hạt Cho Mèo</h2>
                             </div>
                             <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                                <div className="dropdown">                                    
-                                    <button 
-                                        className="btn btn-primary dropdown-toggle btn-sort" 
-                                        type="button" 
-                                        id="dropdownSortMenu" 
-                                        data-toggle="dropdown" 
-                                        aria-haspopup="true" 
-                                        aria-expanded="true">
-                                        Sắp xếp theo 
-                                    </button>
-                                    <ul className="dropdown-menu" aria-labelledby="dropdownSortMenu">
-                                        <li 
-                                            // onClick = { () => this.onClick('name', '1')}
-                                        >
-                                            <a role="button">
-                                                <span>
-                                                    Giá: Thấp đến Cao
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li 
-                                            // onClick = { () => this.onClick('name', '-1')}
-                                        >
-                                            <a role="button">
-                                                <span>
-                                                    Giá: Cao đến Thấp
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li role="separator" className="divider"></li>
-                                        <li 
-                                            // onClick = { () => this.onClick('status', '1')}
-                                        >
-                                            <a role="button">
-                                                Bán Chạy
-                                            </a>
-                                        </li>
-                                        <li 
-                                            // onClick = { () => this.onClick('status', '-1')}
-                                        >
-                                            <a role="button">
-                                                Mới nhất
-                                            </a>
-                                        </li>
-                                    </ul>
-                            
-                                </div>
+                                <SortProduct/>
                             </div>                                          
                         </div>  
                         <div className='display-inline'>

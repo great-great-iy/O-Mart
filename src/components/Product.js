@@ -9,12 +9,11 @@ class Product extends Component {
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 mt-3 mb-3">
                     <div class="pr-col">
                         <div class="pr-col-item">
-                            <div class="pr-item">
-        
-                            </div>
+
                             <div class="item-img">
                                 <a href='/productDetail'><img src={product.image} alt={product.name}/></a>
                             </div>
+                            <div class="pr-item"></div>
                         </div>
                         <div className="pr-lable">
                             <div class="pr-txt">

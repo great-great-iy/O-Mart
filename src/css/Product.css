@@ -1,30 +1,29 @@
 .pr-col .pr-col-item{
     position: relative;
     width: 100%;
-    height: 424px;
+    height: 328px;
     background: #D1EFEF;
     border-radius: 60px;
     margin-bottom: 5%;
     padding: 20px;
     box-sizing: border-box;
 }
+.pr-col-item .item-img{
+    position: relative;
+    top: 27px;
+    z-index: 99;
+    width: 60%;
+    height: auto;
+}
 
 .pr-col-item .pr-item{
     position: relative;
-    width: 218px;
+    width: 80%;
     height: 52px;
-    border-radius: 218px/52px;
+    border-radius: 174px/52px;
     background: #E7FFFF;
 }
 
-.pr-col-item .item-img{
-    position: relative;
-    z-index: 99;
-    width: 156px;
-    height: 220px;
-    border: none;
-    top: 70px;
-}
 
 .item-img img{
     width: 100%;
@@ -67,7 +66,7 @@
     border-radius: 25px;
     color: #5E5B59;
     border: 1px solid #FFAA3B;
-    padding: 8px 34px 6px 34px;
+    padding: 8px 28px 6px 28px;
     font-size: 14px;
 }
 
