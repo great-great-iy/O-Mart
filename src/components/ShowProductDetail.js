@@ -111,9 +111,9 @@ class ShowProductDetail extends Component{
                             <label className='mr-4'>Số lượng</label>
                             
                             <span>
-                            <button type="button" class="btn btn-primary btn-add-sub"><i class="fas fa-minus"></i></button>
+                            <button type="button" class="btn btn-add-sub"><i class="fas fa-minus"></i></button>
                             <span className='show-quantity mr-5 ml-5'>5</span>
-                            <button type="button" class="btn btn-primary btn-add-sub"><i class="fas fa-plus"></i></button>                            
+                            <button type="button" class="btn btn-add-sub"><i class="fas fa-plus"></i></button>                            
                             </span>
                                             
                         </div>
@@ -129,7 +129,7 @@ class ShowProductDetail extends Component{
                                 
                             <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                                 
-                                <button type="button" class="btn btn-primary mt-3 btn-like">
+                                <button type="button" class="btn mt-3 btn-like">
                                     <i class="far fa-heart mr-2"></i>
                                     YÊU THÍCH    
                                 </button>

@@ -8,7 +8,6 @@
 }
 
 .product-filter label, .price-filter label, .brand-filter label{
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -30,17 +29,17 @@
     color: #5E5B59;
     margin: 10px auto;
     border-radius: 15px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     padding: 8px;
-    border: #D1EFEF;
+    border: none;
 }
 
-.btn-product-picker:hover {
+.btn-product-picker:hover, .btn-product-picker:focus {
     background: #FFAA3B;
+    color: #E7FFFF;
 }
 
 .min-price-filter{
@@ -57,18 +56,23 @@
     font-size: 12px;
 }
 
-.btn-filter{
-    font-family: Montserrat;
+.btn-price-filter{
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 18px;
+    color: #5E5B59;
     margin: 0px 10%;
     padding: 5px 8%;
-    border: #FFAA3B;
+    border: none;
     background: #FFAA3B;
     border-radius: 15px;    
 }
+
+.btn-price-filter:hover, .btn-price-filter:focus{
+    background-color: #D1EFEF;
+}
+
 
 
 .tag-brands {
@@ -77,7 +81,6 @@
 }
 
 .tag-brands label{
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './../css/Product.css';
 
 class SortProduct extends Component {
     render() {
@@ -6,7 +7,7 @@ class SortProduct extends Component {
             <>
                 <div className="dropdown">                                    
                     <button 
-                        className="btn btn-primary dropdown-toggle btn-sort" 
+                        className="btn dropdown-toggle btn-sort" 
                         type="button" 
                         id="dropdownSortMenu" 
                         data-toggle="dropdown" 
@@ -14,18 +15,19 @@ class SortProduct extends Component {
                         aria-expanded="true">
                         Sắp xếp theo 
                     </button>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownSortMenu">
+                    <ul className="dropdown-menu sort-menu" aria-labelledby="dropdownSortMenu">
                         <li 
-                            // onClick = { () => this.onClick('name', '1')}
+                            onClick = { () => this.onClick('price', '1')}
                         >
                             <a role="button">
                                 <span>
                                     Giá: Thấp đến Cao
                                 </span>
+                                <i class="fas fa-check"></i>
                             </a>
                         </li>
                         <li 
-                            // onClick = { () => this.onClick('name', '-1')}
+                            onClick = { () => this.onClick('price', '-1')}
                         >
                             <a role="button">
                                 <span>
@@ -35,24 +37,29 @@ class SortProduct extends Component {
                         </li>
                         <li role="separator" className="divider"></li>
                         <li 
-                            // onClick = { () => this.onClick('status', '1')}
+                            onClick = { () => this.onClick('flash sale', '1')}
                         >
                             <a role="button">
                                 Bán Chạy
                             </a>
                         </li>
                         <li 
-                            // onClick = { () => this.onClick('status', '-1')}
+                            onClick = { () => this.onClick('new product', '1')}
                         >
                             <a role="button">
                                 Mới nhất
                             </a>
                         </li>
                     </ul>
-            
                 </div>
             </>
         );
+    }
+    onClick = (sortBy, sortValue) => {
+        this.props.onSortProduct({ 
+            by : sortBy,
+            value : sortValue
+        });
     }
 }
 

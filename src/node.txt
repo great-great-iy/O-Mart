@@ -1,0 +1,18 @@
+Kích thước font chữ
+Nội dung: 16px
+Nội dung phụ: 13px
+Tiêu đề: 26px
+Tiêu đề phụ: 20px
+Tiêu đề lớn: 42px
+
+Từ đó ta tính được kích thước font/ Khoảng cách dòng:
+
+Nội dung: 16px/ 26
+Nội dung phụ: 13px/ 21
+Tiêu đề: 26px/ 38
+Tiêu đề phụ: 20px/ 31
+Tiêu đề lớn: 42px/ 57
+
+(kích thước font/ Khoảng cách dòng)
+
+* Khoảng cách dòng phụ thuộc vào kích thước font và độ dài chiều ngang dòng. Nên khi độ dài chiều ngang dòng thay đổi, khoảng cách dòng cũng thay đổi theo.

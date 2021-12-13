@@ -4,15 +4,46 @@ import Product from '../components/Product';
 import Products from '../components/Products';
 import PropTypes from 'prop-types';
 
+
 import * as actions from './../actions/index' ;
 // import products from '../reducers/products';
 
 class ProductsContainer extends Component {
     render() {
-        var { products } = this.props;
+        var { products, sort, filter } = this.props;
+        if(filter.typeProduct){
+            products = products.filter((product) => {
+                return product.typeProduct.toLowerCase().indexOf(filter.typeProduct.toLowerCase()) !== -1;
+            });
+        }
+        if(filter.price.endPrice){
+            products = products.filter((product) => {
+                if(filter.price.startPrice <= product.price && filter.price.endPrice >= product.price)
+                return 1;
+            });
+        }
+        // products = t.filter((task)=>{
+        //     if(filterTable.status === -1){
+        //         return task;
+        //     }else{
+        //         return task.status === (filterTable.status === 1 ? true : false);
+        //     }
+        // });
 
-        return (
-            
+        // if(searchTask.keyword !==''){
+        //     tasks = tasks.filter((task)=>{
+        //         return task.name.toLowerCase().indexOf(searchTask.keyword) !== -1;
+        //     });
+        // }
+
+        if(sort.by==='price'){
+            products.sort((a, b) => {
+                if(a.price > b.price) return sort.value;
+                else if(a.price < b.price) return -sort.value
+                else return 0;
+            });
+        }
+        return (    
             <Products>
                 {this.showProduct(products)}
             </Products>                      
@@ -52,7 +83,9 @@ ProductsContainer.propTypes = {
 
 const mapStateToProps = (state) =>{
     return {
-        products : state.products
+        products : state.products,
+        sort : state.sortProduct,
+        filter : state.filterProduct
     }
 }
 

@@ -1,4 +1,4 @@
-import * as Types from './../constants/ActionTypes';
+
 
 var randomID = require('randomstring');
 
@@ -10,9 +10,10 @@ var intialState = [
         price : 199000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Solidgold',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 3
     },
@@ -23,9 +24,10 @@ var intialState = [
         price : 299000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Solidgold',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 5
     },
@@ -36,9 +38,10 @@ var intialState = [
         price : 399000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Solidgold',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 4
     },
@@ -49,9 +52,10 @@ var intialState = [
         price : 199000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Solidgold',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 5
     },
@@ -62,9 +66,10 @@ var intialState = [
         price : 299000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Solidgold',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 5
     },
@@ -75,9 +80,10 @@ var intialState = [
         price : 399000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Solidgold',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 3
     },
@@ -88,9 +94,10 @@ var intialState = [
         price : 230000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Wholehearted',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 5
     },
@@ -101,9 +108,10 @@ var intialState = [
         price : 240000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Wholehearted',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 2
     },
@@ -114,16 +122,17 @@ var intialState = [
         price : 250000,
         desciption : '',
         trademark : {
-            name : '',
+            name : 'Wholehearted',
             logo : ''
         },
+        typeProduct: 'Hat kho',
         inventory : 10,
         rating : 3
     }
 ]
 
 const products = (state = intialState, action) => {
-    switch(action.Types){
+    switch(action.type){
         
         default: return [...state]
     }

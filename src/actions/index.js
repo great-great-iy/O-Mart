@@ -30,3 +30,18 @@ export const actUpdateProductInCart = (product, quantity) =>{
         quantity
     }
 }
+
+
+export const sortProduct = (sort) =>{
+    return {
+        type: Types.SORT_PRODUCT,
+        sort
+    }
+}
+
+export const filterProduct = (filter) =>{
+    return{
+        type: Types.FILTER_PRODUCT,
+        filter
+    }
+}

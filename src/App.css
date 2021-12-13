@@ -3,23 +3,13 @@
     max-width: 1280px;
     margin: auto;
 }
-.btn-sort {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    color: #5E5B59;
-    background-color: #D1EFEF;
-    border: none;
-    border-radius: 25px;
-    padding: 5px 25px;
-}
 
 h2{
     color: #5E5B59;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 31px;
+    font-size: 26px;
+    line-height: 38px;
 }
 .App {
     text-align: center;

@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SortProduct from '../components/SortProduct';
+import FilterProduct from '../components/FilterProduct';
 import * as actions from './../actions/index';
 
 
 
-class SortContainer extends Component {
+class FilterContainer extends Component {
     render() {
-        var { trademark, onSortProduct } = this.props;
+        var { trademark, onFilterProduct } = this.props;
         return (
             <>
-                <SortProduct
-                    onSortProduct = {onSortProduct}
+                <FilterProduct
+                    onFilterProduct = {onFilterProduct}
                     trademarkProduct = {trademark}
                 />                    
             </>                  
@@ -27,10 +27,10 @@ const mapStateToProps = (state) =>{
 
 const mapDispatchToProps = (dispatch, props) =>{
     return {
-        onSortProduct : (sort) => {
-            dispatch(actions.sortProduct(sort))
+        onFilterProduct : (filter) => {
+            dispatch(actions.filterProduct(filter))
         }
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps) (SortContainer);
+export default connect(mapStateToProps, mapDispatchToProps) (FilterContainer);
